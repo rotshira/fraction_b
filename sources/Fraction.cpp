@@ -334,16 +334,16 @@ std::istream& operator>>(std::istream& input, Fraction& fraction) {
     // Read the numerator
     input >> numerator;
     if(input.fail()) {
-        throw std::runtime_error("Invalid input. Numerator must be an integer.");
+        throw std::runtime_error("Invalid ");
     }
 
     // Read the denominator
     input >> denominator;
     if(input.fail()) {
-        throw std::runtime_error("Invalid input. Denominator must be an integer.");
+        throw std::runtime_error("Invalid ");
     }
     else if(denominator == 0) {
-        throw std::runtime_error("Invalid input. Denominator cannot be zero.");
+        throw std::runtime_error("Invalid");
     }
 
     // Set the fraction's numerator and denominator
